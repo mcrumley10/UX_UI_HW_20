@@ -1,0 +1,253 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'didot', sans-serif;
+}
+p{
+    font-family: 'avenir', serif;
+}
+
+h3{
+    font-size: 20px;
+}
+h2{
+    font-size: 22px;
+    font-weight:500;
+
+}
+
+/* nav*/
+/*#F3D45E, #C34831*/
+
+.customNav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #C34831;
+    z-index: 10;
+}
+
+.customNav a{
+    color: white !important;
+}
+
+.customNav img{
+    width: 60%;
+    height: auto;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #F3D45E;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* body*/
+
+body{
+    padding-top:150px;
+    margin:auto;
+    
+}
+
+/* jumbotron*/
+.jumbotron{
+    height: calc(100vh - 25px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background-color: white;
+}
+
+.responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height:auto;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.responsive2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+
+}
+
+h1{
+    text-align: center;
+    
+}
+
+p .lead{
+    padding: 30px;
+}
+
+.infoSection{
+    padding: 10px 100px;
+}
+.overview{
+    margin: auto;
+    padding: 10px 100px;
+}
+
+.userResearch{
+    background-color: #FFF4CA;
+}
+
+
+/*  Skills */
+
+.containerSkills{
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    text-align: left;
+}
+
+#skills{
+    padding: 30px 0;
+
+}
+
+#skills .subtitle{
+    text-align: center;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skills-list div{
+    background: #F3D45E;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.skills-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skills-list div a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.skills-list div:hover{
+    background: #9ECBE2;
+    transform: translateY(-10px);
+}
+
+/*.insightList{
+    font-size: 20px;
+}*/
+
+
+/* card accordian collapse*/
+
+.card mb-3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+.card2{
+    background-color:#D2F0FF;
+
+}
+
+h2 .mb-0{
+    text-align: center;
+    font-family: "avenir" sans-serif;
+    text-decoration: none;
+    font-weight: 300px;
+}
+
+/*.Prototypes{
+    background-color:#FFF4CA;
+}*/
+
+button{
+    display: block;
+    background-color:#FFF4CA;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iterationOne img{
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*  Footer */
+
+.footer {
+    display: flex;
+    background-color: #C34831;
+    color: white;
+    align-items: column;
+    padding: 5px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    height: 100px;
+}
+
+.footer p .contactEmail{
+    float: right;
+}
+
+
+
+/*media query*/
+
+@media only screen and (max-width:600){
+    flex-container:;
+    width:;
+    grid-template-areas: ;
+    grid-template-rows:;
+    grid-template-columns:;
+}
